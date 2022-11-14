@@ -1,7 +1,5 @@
 # Title?
 
-[TOC]
-
 ## Abstract
 
 A 150 word description of the project idea and goals.
