@@ -39,3 +39,5 @@ Naisong:
 Yiyang:
 
 ## Questions for TAs
+
+Analyzing word frequencies is somewhat intuitive.
