@@ -1,6 +1,6 @@
 # Gender Analysis on CMU Movie Dataset
 
-***A**ll**D**atapoint**A**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolong Li*
+_**A**ll**d**atapoint**a**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolong Li_
 
 ## Abstract
 
