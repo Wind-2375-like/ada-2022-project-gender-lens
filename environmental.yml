@@ -12,3 +12,4 @@ dependencies:
   - python
   - scikit-learn
   - networkx
+  - wordcloud
