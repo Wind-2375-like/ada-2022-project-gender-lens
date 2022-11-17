@@ -4,7 +4,7 @@ _**A**ll**d**atapoint**a**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolon
 
 ## Abstract
 
-As feminist consciousness grows, gender differences in society have received much more attention and people start to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve over time. Then we will tap into the evolutions of gender inequalities from overall gender composition, social networks, and actor careers and make possible explanations in relation to gender stereotypes and social events. After this study, we can gain a deeper understanding of gender differences in films.
+As feminist consciousness grows, gender differences in society have received much more attention and people start to wonder where gender differences occur. Movies are a significant player in people's lives. Thus, we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve over time. Then we will tap into the evolutions of gender inequalities from overall gender composition, social networks, and actor careers and make possible explanations in relation to gender stereotypes and social events. After this study, we can gain a deeper understanding of gender differences in films.
 
 ## Research Questions
 
@@ -32,9 +32,7 @@ We found that gender stereotypes do exist in movie plot summaries! We can roughl
 text
 > ### How does gender affect actors' careers in their opportunities and success?
 
-Gender inequality appears in many professions. We want to investigate how female and male actors differ in their careers. To explore this, two sub-questions could be raised: are female and male actors given equal opportunities in the movie industry? do they achieve the same level of success?
-
-To answer the first question, we grouped characters by year and see if the total number of female and male actors differs like this:
+We want to investigate how female and male actors differ in their careers. To explore this, two sub-questions could be raised: are female and male actors given equal opportunities in the movie industry? do they achieve the same level of success?
 
 To answer the first question, we grouped characters by year and see if the total number of female and male actors differs like this:
 
@@ -46,17 +44,13 @@ We also plot the average age evolution of female and male actors:
 
 The plots above show that: 1. female characters are far fewer than male actors, and the opportunities are not equally given. 2. female actors are generally younger than male actors, which means that female actors have a rather short career span than male actors.  What leads to this phenomenon? We will investigate through 4 main directions: market preference; the social influence of actors; stereotypes in movies; general lack of opportunities for women in all professions.
 
-<img alt="image 4" src="./images/actor_age_evolution.png" />
-
-The plots above show that: 1. female characters are far fewer than male actors, and the opportunities are not equally given. 2. female actors are generally younger than male actors, which means that female actors have a rather short career span than male actors.  What leads to this phenomenon? We will investigate through 4 main directions: market preference; the social influence of actors; stereotypes in movies; general lack of opportunities for women in all professions.
-
-To answer the second question, we need to first give a definition of success. We will define a function that aggregates both revenues actors made and their industrial influence based on the following discussed social network, which is to be implemented and refined afterward.
+To answer the second question, we need to first give a definition of success. We will define a function that aggregates both revenues actors made, and their industrial influence based on the following discussed social network, which is to be implemented and refined afterward.
 
 > ### Is there a structural gender difference in the social networks of actors?
 
 Actors are an important part of the movies, and the movies in which the two actors have worked together can be seen as a direct link between these two actors, which contributes to a very big social network. With the help of such a network structure, we can find out the structural gender difference in the movies.
 
-We start to build up the graph with the prepared nodes and edges data. We use `nx.Graph()` to generate an empty undirected graph and load our prepared data. In our social network graph, every actor represents a node and there is an edge between two nodes if the two actors have cooperated in at least one movie. First, we analyze the Top100 most influential actors' gender and height difference preliminarily and then draw out their social relationship topology. `In the next stage`, we will consider the attributes of edges in our graph, such as the number of cooperation. We also try to use the Louvain Modularity Algorithm or Girvan-Newman Algorithm to do a deeper analysis about gender differences in the social relationship topology.
+We start to build up the graph with the prepared nodes and edges data. We use `nx.Graph()` to generate an empty undirected graph and load our prepared data. In our social network graph, every actor represents a node and there is an edge between two nodes if the two actors have cooperated in at least one movie. First, we analyze the Top100 most influential actors' gender and height difference preliminarily and then draw out their social relationship topology. **In the next stage**, we will consider the attributes of edges in our graph, such as the number of cooperation. We also try to use the Louvain Modularity Algorithm or Girvan-Newman Algorithm to do a deeper analysis about gender differences in the social relationship topology.
 
 <img alt="image 4" src="./images/Top100_Graph.png" width = "50%">
 
