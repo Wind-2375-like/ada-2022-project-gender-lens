@@ -1,3 +1,4 @@
+name: Ada2022
 
 channels: 
   - defaults
@@ -11,4 +12,3 @@ dependencies:
   - python
   - scikit-learn
   - networkx
-  - wordcloud

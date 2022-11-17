@@ -4,7 +4,7 @@
 
 ## Abstract
 
-As feminist consciousness grows, gender differences in society have received much more attention and people start to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve over time. Then we will tap into the evolutions of gender inequalities from overall gender composition, social networks, and actor careers and make possible explanations in relation to gender stereotypes and social events. After this study, we can gain a deeper understanding of gender difference in films.
+As feminist consciousness grows, gender differences in society have received much more attention and people start to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve over time. Then we will tap into the evolutions of gender inequalities from overall gender composition, social networks, and actor careers and make possible explanations in relation to gender stereotypes and social events. After this study, we can gain a deeper understanding of gender differences in films.
 
 ## Research Questions
 
@@ -38,11 +38,19 @@ text
 
 text
 
+## Environment Setup
+
+Run in the terminal:
+
+```shell
+conda env create -f environment.yml
+```
+
 ## Proposed Timeline
 
 - 18 November – 25 November: 
 - 25 November – 2 December:
-- 2 December –9 December: meeting
+- 2 December –9 December: 准备 meeting
 - 9 December – 16 December: 准备 meeting
 - 16 December – 23 December: 最终 refine story 和 data analysis
 
