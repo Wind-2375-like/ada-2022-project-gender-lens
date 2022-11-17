@@ -32,16 +32,19 @@ We found that gender stereotypes do exist in movie plot summaries! We can roughl
 text
 > ### How does gender affect actors' careers in their opportunities and success?
 
-Gender inequality appears in many professions. We want to investigate how female and male actors differ in their career. To explore this, two sub-questions could be raised: are female and male actors given equal opportunities in movie industry? do they achieve same level of success?
+Gender inequality appears in many professions. We want to investigate how female and male actors differ in their careers. To explore this, two sub-questions could be raised: are female and male actors given equal opportunities in the movie industry? do they achieve the same level of success?
 
-To answer the first question, we grouped characters by year and see if total number of female and male actors differs like this:
+To answer the first question, we grouped characters by year and see if the total number of female and male actors differs like this:
+
 <img alt="image 3" src="./images/actor_population_evolution.png" />
 
 We also plot the average age evolution of female and male actors:
-<img alt="image 4" src="./images/actor_age_evolution.png" />
-The plots above shows that: 1. female characters are far less than male actors, the opportunities are not equally given. 2. female actors are generally younger than male actors, which means that female actors has a rather short career span than male actors.  What leads to this phenomenon? We will investigate through 4 main directions: market preference; social influence of actors; stereotypes in movies; general lack of opportunites of women in all professions.
 
-To answer the second question, we need to first give a definition on success. We will define a function which aggregates both revenues actors made and their industrial influence based on the following discussed social network, which is to be implemented and refined afterwards.
+<img alt="image 4" src="./images/actor_age_evolution.png" />
+
+The plots above show that: 1. female characters are far fewer than male actors, and the opportunities are not equally given. 2. female actors are generally younger than male actors, which means that female actors have a rather short career span than male actors.  What leads to this phenomenon? We will investigate through 4 main directions: market preference; the social influence of actors; stereotypes in movies; general lack of opportunities for women in all professions.
+
+To answer the second question, we need to first give a definition of success. We will define a function that aggregates both revenues actors made and their industrial influence based on the following discussed social network, which is to be implemented and refined afterward.
 
 > ### Is there a structural gender difference in the social networks of actors?
 
