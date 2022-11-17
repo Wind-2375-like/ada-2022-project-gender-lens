@@ -36,9 +36,15 @@ Gender inequality appears in many professions. We want to investigate how female
 
 To answer the first question, we grouped characters by year and see if the total number of female and male actors differs like this:
 
+To answer the first question, we grouped characters by year and see if the total number of female and male actors differs like this:
+
 <img alt="image 3" src="./images/actor_population_evolution.png" />
 
 We also plot the average age evolution of female and male actors:
+
+<img alt="image 4" src="./images/actor_age_evolution.png" />
+
+The plots above show that: 1. female characters are far fewer than male actors, and the opportunities are not equally given. 2. female actors are generally younger than male actors, which means that female actors have a rather short career span than male actors.  What leads to this phenomenon? We will investigate through 4 main directions: market preference; the social influence of actors; stereotypes in movies; general lack of opportunities for women in all professions.
 
 <img alt="image 4" src="./images/actor_age_evolution.png" />
 
@@ -48,7 +54,11 @@ To answer the second question, we need to first give a definition of success. We
 
 > ### Is there a structural gender difference in the social networks of actors?
 
-text
+Actors are an important part of the movies, and the movies in which the two actors have worked together can be seen as a direct link between these two actors, which contributes to a very big social network. With the help of such a network structure, we can find out the structural gender difference in the movies.
+
+We start to build up the graph with the prepared nodes and edges data. We use `nx.Graph()` to generate an empty undirected graph and load our prepared data. In our social network graph, every actor represents a node and there is an edge between two nodes if the two actors have cooperated in at least one movie. First, we analyze the Top100 most influential actors' gender and height difference preliminarily and then draw out their social relationship topology. `In the next stage`, we will consider the attributes of edges in our graph, such as the number of cooperation. We also try to use the Louvain Modularity Algorithm or Girvan-Newman Algorithm to do a deeper analysis about gender differences in the social relationship topology.
+
+<img alt="image 4" src="./images/Top100_Graph.png" width = "50%">
 
 ## Environment Setup
 
@@ -60,11 +70,11 @@ conda env create -f environment.yml
 
 ## Proposed Timeline
 
-- 18 November – 25 November: 
-- 25 November – 2 December:
-- 2 December –9 December: 准备 meeting
-- 9 December – 16 December: 准备 meeting
-- 16 December – 23 December: 最终 refine story 和 data analysis
+- 18 November – 25 November: Continue the project and conduct a deeper analysis according to the future directions. 
+- 25 November – 2 December: Pause project work and do the Homework 2.
+- 2 December –9 December: Integrate all analysis and write out the draft of our datastory.
+- 9 December – 16 December: Complete the team github including all code and other documents, and revise our datastory to the final version.
+- 16 December – 23 December: Build the web development interface to tell our datastory vividly.
 
 ## Organization within the Team
 
@@ -89,7 +99,7 @@ A list of internal milestones up until project Milestone 3.
   </tr>
   <tr>
     <td class="tg-0lax">Haotian</td>
-    <td class="tg-0lax">Build the actor social network to analyze the structual gender difference in the actor relationship<br><br>Develop the web interface for the data story<br><br>Develop the final text for the data story</td>
+    <td class="tg-0lax">Build the actor social network to analyze the structural gender difference in the actor relationship<br><br>Develop the web interface for the data story<br><br>Develop the final text for the data story</td>
   </tr>
   <tr>
     <td class="tg-0lax">Naisong</td>
