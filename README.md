@@ -23,7 +23,7 @@ As feminist consciousness grows, gender differences have received much more atte
 
 We want to know whether gender stereotypes exist in movie plot summaries. We consider relevant words around male characters and female characters. We implement this by searching plot summaries containing character names in character DataFrame. Then we identify relevant words as the first or last two words of a noun, verb, or adjective from the character name within one sentence. We extract relevant words around these names by gender and count the log frequency of words related to different genders. Finally, we analyze the top 15 frequent words for different genders. We analyze the overall distribution of words describing male and female roles and the distribution of verbs, nouns, and adjectives.
 
-<img alt="图 2" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost/img/cf3913dbcc9499201e620e99d52e04dcaf8e5c61f025b598877efc82f68646f3.png" />
+<img alt="图 2" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost/img/cf3913dbcc9499201e620e99d52e04dcaf8e5c61f025b598877efc82f68646f3.png" width = "70%" />
 
 We found that gender stereotypes do exist in movie plot summaries! We can roughly see that males are more related to the words "kill", "police", and "old", while females are associated with the words "love", "marry", and "young". The analysis is relatively primitive and subjective. We need to refine our analysis and find some methods and metrics in the future.
 
@@ -31,9 +31,9 @@ We found that gender stereotypes do exist in movie plot summaries! We can roughl
 
 In this section, we are interested in how gender composition evolves and find possible reasons for such variations. To answer these questions, we first derive the annual gender composition in the movie industry.
 
-<img alt="image 5" src="./images/genderDiff.png" />
+<img alt="image 5" src="./images/genderDiff.png" width = "70%" />
 
-<img alt="image 6" src="./images/genderRatio.png" />
+<img alt="image 6" src="./images/genderRatio.png" width = "70%" />
 
 It is not hard to see that the portion of female actors first decreases then increases, while the absolute number of female actors keeps increasing after around 1942.
 
@@ -45,11 +45,11 @@ We raised two sub-questions when investigating how female and male actors differ
 
 To answer the first question, we grouped characters by year and see if the total number of female and male actors differs:
 
-<img alt="image 3" src="./images/actor_population_evolution.png" />
+<img alt="image 3" src="./images/actor_population_evolution.png" width = "70%" />
 
 We also plot the average age evolution of female and male actors:
 
-<img alt="image 4" src="./images/actor_age_evolution.png" />
+<img alt="image 4" src="./images/actor_age_evolution.png" width = "70%" />
 
 The plots above show that: 1. female characters are far fewer than male actors, and the opportunities are not equally given. 2. female actors are generally younger than male actors, meaning that female actors have a shorter career span than male actors. What leads to this phenomenon? We will investigate through 4 main directions: market preference, the social influence of actors, stereotypes in movies, and the general lack of opportunities for women in all professions.
 
@@ -61,7 +61,7 @@ Actors are an essential part of the movies, and the movies in which the two acto
 
 We start to build up the graph with the prepared nodes and edges data. We use `nx.Graph()` to generate an empty undirected graph and load our prepared data. In our social network graph, every actor represents a node and has an edge between two nodes if the two actors cooperate in at least one movie. First, we analyze the Top100 most influential actors' gender and height difference preliminarily and then draw out their social relationship topology. In the next stage, we will consider the attributes of edges in our graph, such as the number of cooperation. We also try to use the Louvain Modularity Algorithm or Girvan-Newman Algorithm to analyze gender differences in the social relationship topology.
 
-<img alt="image 4" src="./images/Top100_Graph.png" width = "50%">
+<img alt="image 4" src="./images/Top100_Graph.png" width = "70%" />
 
 ## Environment Setup
 
