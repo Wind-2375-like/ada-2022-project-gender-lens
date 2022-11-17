@@ -29,7 +29,18 @@ We found that gender stereotypes do exist in movie plot summaries! We can roughl
 
 > ### How does the gender composition among the actors change over time?
 
-text
+In this section we are interested in how does the gender composition evolve over time, and to possibly find reasons for such variations.
+
+To answer these questions, we first derive the annual gender composition in the movie industry.
+
+<img alt="image 5" src="./images/genderDiff.png" />
+
+<img alt="image 5" src="./images/genderRatio.png" />
+
+It is not hard to see that the portion of female actors first decrease then increases, while the absolute number of female actors keeps increasing after around 1942.
+
+We are further interested in the reasons behind those changes. Does major social events like wars, economic crisis influence women's occurence in the movies? Does the social wealth (GDP) has something to do with this? To account for these questions, we will need to align historical events and annual GDP to the timeline to see if there are effects. To Statistically prove the claims, we will use methods including hypothesis testing, error bars to make things clear.
+
 > ### How does gender affect actors' careers in their opportunities and success?
 
 Gender inequality appears in many professions. We want to investigate how female and male actors differ in their careers. To explore this, two sub-questions could be raised: are female and male actors given equal opportunities in the movie industry? do they achieve the same level of success?
