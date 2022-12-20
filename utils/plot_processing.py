@@ -1,6 +1,7 @@
 from tqdm import tqdm
 import string
 import xml.etree.ElementTree as ET
+import pandas as pd
 
 def extract_word_frequency(movies, gender_dict, pos_mapping, summary_path, window_size=2):
     """Extract word frequency
