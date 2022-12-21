@@ -164,7 +164,7 @@ A list of internal milestones up until project Milestone 3.
 <tbody>
   <tr>
     <td class="tg-0lax">Haolong</td>
-    <td class="tg-0lax">Discover regional gender composition in the movie industry<br><br>Discover the relationship between gender composition and factors like major social events or societal wealth<br><br>Develop the final text for the data story</td>
+    <td class="tg-0lax">Analysis on gender composition<br><br>Develop the web interface for the data story<br><br>Building the final datastory website & Integrating results<br><br>Developing the final text for the data story</td>
   </tr>
   <tr>
     <td class="tg-0lax">Haotian</td>
