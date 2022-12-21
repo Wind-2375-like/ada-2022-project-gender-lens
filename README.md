@@ -15,7 +15,6 @@ As feminist consciousness grows, gender differences have received much more atte
 
 ## Proposed Additional Datasets
 
-- [GDP per capita from The World Bank](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD): a dataset containing country names and GDP per capita for analyzing the relationship between the affluence of society and the occurrence of women in the film industry.
 - [Processed summaries with Stanford CoreNLP pipeline](http://www.cs.cmu.edu/~ark/personas/data/corenlp_plot_summaries.tar): The CMU Movie Summary Corpus dataset that have been run through the Stanford CoreNLP pipeline. These summaries are stored in XML format. This dataset can be used to extract character descriptors as defined in the paper [Learning Latent Personas of Film Characters](http://www.cs.cmu.edu/~dbamman/pubs/pdf/bamman+oconnor+smith.acl13.pdf) by David Bamman, Brendan O'Connor, and Noah A. Smith. We use the word POS for our analysis.
 
 ## Methods
@@ -46,15 +45,35 @@ We could see that the KL divergence is decreasing, so gender stereotype exists b
 
 In this section, we are interested in how gender composition in the movie industry evolves. To answer these questions, we first derive the annual gender composition in the movie industry.
 
+<img alt="image 9" src="./images/genderCount.png" width = "70%" />
 
+With the annual actors count by sex in hand, we are able to investigate into the gender composition in the movie industry by time.
+
+First, we look at the difference of counts across genders by year.
 
 <img alt="image 5" src="./images/genderDiff.png" width = "70%" />
 
+Then, we look at the ratio of male actors count against the female actresses count by year.
+
 <img alt="image 6" src="./images/genderRatio.png" width = "70%" />
 
-It is not hard to see that the portion of female actors first decreases then increases, while the absolute number of female actors keeps increasing after around 1942.
+It is not hard to see that the __portion__ of female actors first decreases then increases, while the absolute number of female actors keeps increasing after around 1942.
 
-We are further interested in the reasons behind those changes. Do major social events like wars and economic crises influence women's occurrence in the movies? Does social wealth (GDP) have something to do with this? To account for these questions, we will need to align historical events and annual GDP to the timeline to see if there are effects. To prove the claims statistically, we will use methods including hypothesis testing and error bars to clarify things.
+We explain that:
+
+$$\frac{Male}{Female} = f(t)$$
+
+Therefore we have:
+
+$$Male - Female = Female(f(t) - 1)$$
+
+We observe that:
+- $Male - Female = Female(f(t) - 1)$ increases to summit at 1941, then decreases and stays stable.
+- $\frac{Male}{Female} = f(t)$  increases to summit at 1941, then decreases all the way.
+
+We conclude that the ratio of male-female attendance in films first increases then decreases. But genreally there are more men than women in the movie industry.
+
+To count for the stable variation of actors count difference, we explain that it is because the increase of absolute number of women actress.
 
 > ### How does gender affect actors' careers in their opportunities and success?
 
