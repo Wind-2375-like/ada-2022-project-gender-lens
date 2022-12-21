@@ -4,11 +4,7 @@ _**A**ll**d**atapoint**a**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolon
 
 ## Abstract
 
-As feminist consciousness grows, gender differences have received much more attention, and people have started to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. 
-First, we claim the existence of gender difference by investigating the graphical structure of actors collaboration and by pointing out the uneven distribution of actor ages upon participation and the distribution of actor's career span. 
-We then observe from movie plot summaries by looking at most frequency-diverged words across two genders;
-After that, we tap into the evolutions of gender inequalities by investigating the gender composition in the movie industry over time; Finally, we focus on how the distribution of actors' career age span change over decades to count for the varying gender inequalities.
-
+As feminist consciousness grows, gender differences have received much more attention, and people have started to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. First, we claim the existence of gender difference by investigating the graphical structure of actors collaboration and by pointing out the uneven distribution of actor ages upon participation and the distribution of actor's career span. We then observe from movie plot summaries by looking at most frequency-diverged words across two genders; After that, we tap into the evolutions of gender inequalities by investigating the gender composition in the movie industry over time; Finally, we focus on how the distribution of actors' career age span change over decades to count for the varying gender inequalities.
 
 ## Research Questions
 
