@@ -29,7 +29,7 @@ We defined gender stereotypes as the presence of gender-neutral words biased tow
 
 For qualitative analysis, we look at the differences in frequencies of words between genders and rank the verbs and adjectives based on this difference. as the most-distinguishable words for men and women.
 
-<img alt="图 5" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/9b71880a5e4063e7b5a85ef80ee2282a2dc032aca5141e64ae7d139b510b12c0.png" width="70%"/>
+<img alt="image 1" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/9b71880a5e4063e7b5a85ef80ee2282a2dc032aca5141e64ae7d139b510b12c0.png" width="70%"/>
 
 We can find that men and women have more distinct word preferences. For the verbs and adjectives, males are associated with crime (kill, shoot, fight, arrest, dead, criminal.), power (lead, manage, powerful), and politics (corrupt), while females are depicted with the word marriage (marry, marriage), love, reproduction (pregnant), appearance (beautiful) and sex (seduce, sexual).
 
@@ -37,11 +37,11 @@ For quantitative analysis, we compare the distributions of verb or adjectives fr
 
 Then we wonder if the gender stereotype evolves with time. We will still use qualitative and quantitative analysis. We group the movies by the release date and cut them by decades.
 
-<img alt="图 7" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/c52046d4d4bbdd36b68190214976b37e890c88b9b1fd1b25c05f9d0312903166.png" width="90%" />
+<img alt="image 2" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/c52046d4d4bbdd36b68190214976b37e890c88b9b1fd1b25c05f9d0312903166.png" width="90%" />
 
 We only show the verbs here. The results of adjectives are similar. We can find that the trends are similar and coherent with the overall analysis. However, we notice a decrease in absolute value by looking at the scale of the x-axis. This may tell us that the bias exists, but it is decreasing with time. Our quantitative analysis further argues this point. We do a regression analysis between KL divergence and decades.
 
-<img alt="图 8" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/6fc54e3e8b1cf1a307c07494a3a7c8c2d91c939d3bc88734d65a60e4477945d5.png" width="50%" />
+<img alt="image 3" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/6fc54e3e8b1cf1a307c07494a3a7c8c2d91c939d3bc88734d65a60e4477945d5.png" width="50%" />
 
 We could see that the KL divergence is decreasing, so gender stereotype exists but decreases with time. We also compare the gender stereotypes between genres, but that's not part of our main story and you can see the notebook for details.
 
@@ -49,7 +49,7 @@ We could see that the KL divergence is decreasing, so gender stereotype exists b
 
 In this section, we are interested in how gender composition in the movie industry evolves. To answer these questions, we first derive the annual gender composition in the movie industry.
 
-<img alt="image 9" src="./images/genderCount.png" width = "70%" />
+<img alt="image 4" src="./images/genderCount.png" width = "70%" />
 
 With the annual actors count by sex in hand, we are able to investigate into the gender composition in the movie industry by time.
 
@@ -85,31 +85,49 @@ In this part, we investigate how female and male actors differ in their careers.
 
 We grouped female/male characters by year and draw a line plot as comparison. It is similar with in previous section but in total population, which shows a general lack of opportunities for female actors than male actors.(The twist plot near 2020 is probably due to some abnormal data.)
 
-<img alt="image 3" src="./images/actor_population_evolution.png" width = "70%" />
+<img alt="image 7" src="./images/actor_population_evolution.png" width = "70%" />
 
 We also plot the average age evolution of female and male actors. It is interesting to see the average ages of both female and male actors increase over time, while in general female actors are almost always youger than male actors.(Again the twist plot near 2020 is probably due to some abnormal data.)
 
 The peak of character ages are in about 20s to 30s for both female and male, while also slight difference exists. The peak of male characters comes a bit later than female characters.
 
-<img alt="image 5" src="./images/female_age_distribution.png" width = "70%" />
+<img alt="image 8" src="./images/female_age_distribution.png" width = "70%" />
 
-<img alt="image 6" src="./images/male_age_distribution.png" width = "70%" />
+<img alt="image 9" src="./images/male_age_distribution.png" width = "70%" />
 
 Besides the peak shift, we see the hist of female age distribution "thinner" than that of male age distribution, which probably means shorter career span. To be more precise, we sort the data with actors with their charaters. The career span in year is then computed from the difference of latest and ealiest character. 
 
 Below are the figures of general career span distribution and its evolution through different years. From these we could conclude that female actors generally have shorter career span than male actors, while most actors only have 1 year of career span, meaning only have starred in 1 movie. From the plots for actors born in different ages, we see the difference between genders is narrowing. (Except for the last plot for actors born from 1990 to 2000, but those may be too young to say about a entire career span.) It may be because of increasing awareness of female rights. 
 
-<img alt="image 7" src="./images/career_span_distribution.png" width = "70%" />
-<img alt="image 8" src="./images/career_span_evolution.png" width = "70%" />
+<img alt="image 10" src="./images/career_span_distribution.png" width = "70%" />
+<img alt="image 11" src="./images/career_span_evolution.png" width = "70%" />
 
 We also tried to find out the reason behind the population difference, which could be seen in `milestone_p3.ipynb` for detail.
 > ### Is there a structural gender difference in the social networks of actors?
 
-Actors are an essential part of the movies, and the movies in which the two actors have worked together can be seen as a direct link between these two actors, which contributes to a vast social network. With the help of such a network structure, we can find the structural gender difference in the movies.
+Actors are an essential part of the movies, and the movies in which the two actors have worked together can be seen as the connect between these two actors, which contributes to a very big social network. With the help of such a network structure, we can find out the structural gender difference in the movies.
 
-We start to build up the graph with the prepared nodes and edges data. We use `nx.Graph()` to generate an empty undirected graph and load our prepared data. In our social network graph, every actor represents a node and has an edge between two nodes if the two actors cooperate in at least one movie. First, we analyze the Top100 most influential actors' gender and height difference preliminarily and then draw out their social relationship topology. In the next stage, we will consider the attributes of edges in our graph, such as the number of cooperation. We also try to use the Louvain Modularity Algorithm or Girvan-Newman Algorithm to analyze gender differences in the social relationship topology.
+We start to build up the graph with the prepared nodes and edges data. We use `nx.Graph()` to generate an empty undirected graph and load our prepared data. In our social network graph, every actor represents a node and there is a edge between two nodes if the two actors have cooperated at least one movies. **The more degrees the node has, the more influential the actor is**.
 
-<img alt="image 4" src="./images/Top100_Graph.png" width = "70%" />
+First we select the top 100 nodes which have the most degrees, which means that they represent 100 most influential actors. We name the original graph G and this subgraph G100. After obversing the gender distribution in graph G and G100, we can find that there are only eight females in the Top100 actors, which shows that in social network of actors the male actors occupy the absolute main force.
+
+<img alt="image 12" src="./images/Gender_ratio.png" width = "70%" />
+
+We also have a look at the most famous male and female actors, who are Samuel L. Jackson and Whoopi Goldberg.
+
+<img alt="image 13" src="./images/Famous_actors.png" width = "70%" />
+
+After filtering some height outliers, we analyse the height difference in G and G100 between male and female actors. The p-value of T-test for the average height of male between Top100 and all actors is **0.61**, which shows that they are different in fact. So we can find that for female actors, who are in Top100 are usualy taller, but for male actors, who are in Top100 almost the same as the average or even shorter than average. It is a fact that taller people are more likely to become an actor or appear in the movies. Furtherly we can make a conclusion that Society has broad height requirements for male actors, but it often has higher requirements for women.
+
+<img alt="image 14" src="./images/Height_difference.png" width = "70%" />
+
+Finally, we generate male subgraph G_male and female subgraph G_female from the social netowrk graph G and compute structural features on them to explore the structural gender difference. 
+
+<img alt="image 15" src="./images/Structrual_features.png" width = "70%" />
+
+It is interesting that although male actors's nodes have more average degrees in male subgraph, which means that there are more cooperations in the film and television industry between male actors, female actors actually have more stable partnerships with female actors accroding to the higher transitivity value of gender subgraphs and higher clustering coefficient of specific actors
+
+One convincing explanation is that the number of female actors is less than the male actors, so for every specific kind of female character group in the movies, there are few potiental female candidates, and that is why there is more stable cooperation relationship between female actors.
 
 ## Environment Setup
 
