@@ -4,7 +4,7 @@ _**A**ll**d**atapoint**a**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolon
 
 ## Abstract
 
-As feminist consciousness grows, gender differences have received much more attention, and people have started to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve. Then we will tap into the evolutions of gender inequalities from overall gender composition, the social network of actors, and actor careers and make possible explanations with gender stereotypes and major news events. After this study, we can gain a deeper understanding of gender differences in films.
+As feminist consciousness grows, gender differences have received much more attention, and people have started to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze their existence and effect over time. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve. Then we will tap into the evolutions of gender inequalities from overall gender composition, the social network of actors, and actor careers. After this study, we can gain a deeper understanding of gender differences in films.
 
 ## Research Questions
 
@@ -43,7 +43,9 @@ We could see that the KL divergence is decreasing, so gender stereotype exists b
 
 > ### How does the gender composition among the actors change over time?
 
-In this section, we are interested in how gender composition evolves and find possible reasons for such variations. To answer these questions, we first derive the annual gender composition in the movie industry.
+In this section, we are interested in how gender composition in the movie industry evolves. To answer these questions, we first derive the annual gender composition in the movie industry.
+
+
 
 <img alt="image 5" src="./images/genderDiff.png" width = "70%" />
 
