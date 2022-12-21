@@ -75,22 +75,30 @@ We conclude that the ratio of male-female attendance in films first increases th
 
 To count for the stable variation of actors count difference, we explain that it is because the increase of absolute number of women actress.
 
-> ### How does gender affect actors' careers in their opportunities and success?
+> ### How does gender affect actors' careers?
 
-We raised two sub-questions when investigating how female and male actors differ in their careers: Are female and male actors given equal opportunities in the movie industry? Do they achieve the same level of success?
+In this part, we investigate how female and male actors differ in their careers. From the population of female/male characters, we can see a difference in their opportunities. From charater age distribution and career span of actors, we see a generally shorter career span of female actors than male actors.
 
-To answer the first question, we grouped characters by year and see if the total number of female and male actors differs:
+We grouped female/male characters by year and draw a line plot as comparison. It is similar with in previous section but in total population, which shows a general lack of opportunities for female actors than male actors.(The twist plot near 2020 is probably due to some abnormal data.)
 
 <img alt="image 3" src="./images/actor_population_evolution.png" width = "70%" />
 
-We also plot the average age evolution of female and male actors:
+We also plot the average age evolution of female and male actors. It is interesting to see the average ages of both female and male actors increase over time, while in general female actors are almost always youger than male actors.(Again the twist plot near 2020 is probably due to some abnormal data.)
 
-<img alt="image 4" src="./images/actor_age_evolution.png" width = "70%" />
+The peak of character ages are in about 20s to 30s for both female and male, while also slight difference exists. The peak of male characters comes a bit later than female characters.
 
-The plots above show that: 1. female characters are far fewer than male actors, and the opportunities are not equally given. 2. female actors are generally younger than male actors, meaning that female actors have a shorter career span than male actors. What leads to this phenomenon? We will investigate through 4 main directions: market preference, the social influence of actors, stereotypes in movies, and the general lack of opportunities for women in all professions.
+<img alt="image 5" src="./images/female_age_distribution.png" width = "70%" />
 
-To answer the second question, we need first to define success. We will define a function that aggregates both revenues actors made and their industrial influence based on the following discussed social network, which is to be implemented and refined afterwards.
+<img alt="image 6" src="./images/male_age_distribution.png" width = "70%" />
 
+Besides the peak shift, we see the hist of female age distribution "thinner" than that of male age distribution, which probably means shorter career span. To be more precise, we sort the data with actors with their charaters. The career span in year is then computed from the difference of latest and ealiest character. 
+
+Below are the figures of general career span distribution and its evolution through different years. From these we could conclude that female actors generally have shorter career span than male actors, while most actors only have 1 year of career span, meaning only have starred in 1 movie. From the plots for actors born in different ages, we see the difference between genders is narrowing. (Except for the last plot for actors born from 1990 to 2000, but those may be too young to say about a entire career span.) It may be because of increasing awareness of female rights. 
+
+<img alt="image 7" src="./images/career_span_distribution.png" width = "70%" />
+<img alt="image 8" src="./images/career_span_evolution.png" width = "70%" />
+
+We also tried to find out the reason behind the population difference, which could be seen in `milestone_p3.ipynb` for detail.
 > ### Is there a structural gender difference in the social networks of actors?
 
 Actors are an essential part of the movies, and the movies in which the two actors have worked together can be seen as a direct link between these two actors, which contributes to a vast social network. With the help of such a network structure, we can find the structural gender difference in the movies.
