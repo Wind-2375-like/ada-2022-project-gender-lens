@@ -89,6 +89,8 @@ We grouped female/male characters by year and draw a line plot as comparison. It
 
 We also plot the average age evolution of female and male actors. It is interesting to see the average ages of both female and male actors increase over time, while in general female actors are almost always youger than male actors.(Again the twist plot near 2020 is probably due to some abnormal data.)
 
+<img alt="actor age evolution" src = "./images/actor_age_evolution.png" width = "70%">
+
 The peak of character ages are in about 20s to 30s for both female and male, while also slight difference exists. The peak of male characters comes a bit later than female characters.
 
 <img alt="image 8" src="./images/female_age_distribution.png" width = "70%" />
