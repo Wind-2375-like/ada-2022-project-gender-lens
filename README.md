@@ -4,7 +4,7 @@ _**A**ll**d**atapoint**a**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolon
 
 ## Abstract
 
-As feminist consciousness grows, gender differences have received much more attention, and people have started to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve. Then we will tap into the evolutions of gender inequalities from overall gender composition, social networks, and actor careers and make possible explanations with gender stereotypes and social events. After this study, we can gain a deeper understanding of gender differences in films.
+As feminist consciousness grows, gender differences have received much more attention, and people have started to wonder where gender differences occur. Movies are a significant player in people's lives. Thus we would like to examine whether gender differences exist in movies. We divide gender differences into gender stereotypes and gender inequalities and analyze how they affect the film itself and the film industry. We will first see whether gender stereotypes exist in movie plot summaries as their influence on movies themselves and figure out how they evolve. Then we will tap into the evolutions of gender inequalities from overall gender composition, the social network of actors, and actor careers and make possible explanations with gender stereotypes and major news events. After this study, we can gain a deeper understanding of gender differences in films.
 
 ## Research Questions
 
@@ -21,11 +21,25 @@ As feminist consciousness grows, gender differences have received much more atte
 
 > ### Do gender stereotypes exist in movie plot summaries and how can we visualize them?
 
-We want to know whether gender stereotypes exist in movie plot summaries. We consider relevant words around male characters and female characters. We implement this by searching plot summaries containing character names in character DataFrame. Then we identify relevant words as the first or last two words of a noun, verb, or adjective from the character name within one sentence. We extract relevant words around these names by gender and count the log frequency of words related to different genders. Finally, we analyze the top 15 frequent words for different genders. We analyze the overall distribution of words describing male and female roles and the distribution of verbs, nouns, and adjectives.
+We defined gender stereotypes as the presence of gender-neutral words biased towards describing male or female characters. We consider relevant words for characters as the first or last two words of a verb or adjective from the character name within sentences in plot summaries. We extract relevant words around these names by gender and count the log frequency of words related to different genders.
 
-<img alt="图 2" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost/img/cf3913dbcc9499201e620e99d52e04dcaf8e5c61f025b598877efc82f68646f3.png" width = "70%" />
+For qualitative analysis, we look at the differences in frequencies of words between genders and rank the verbs and adjectives based on this difference. as the most-distinguishable words for men and women.
 
-We found that gender stereotypes do exist in movie plot summaries! We can roughly see that males are more related to the words "kill", "police", and "old", while females are associated with the words "love", "marry", and "young". The analysis is relatively primitive and subjective. We need to refine our analysis and find some methods and metrics in the future.
+<img alt="图 5" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/9b71880a5e4063e7b5a85ef80ee2282a2dc032aca5141e64ae7d139b510b12c0.png" width="70%"/>
+
+We can find that men and women have more distinct word preferences. For the verbs and adjectives, males are associated with crime (kill, shoot, fight, arrest, dead, criminal.), power (lead, manage, powerful), and politics (corrupt), while females are depicted with the word marriage (marry, marriage), love, reproduction (pregnant), appearance (beautiful) and sex (seduce, sexual).
+
+For quantitative analysis, we compare the distributions of verb or adjectives frequencies between men and women. We use a chi-square test to see if the difference is significant and adopt KL divergence to measure how different the two distributions are. The p-value in the chi-square test is close to zero, indicating the difference is significant. The KL divergence is 0.07 and 0.16 for verbs and adjectives.
+
+Then we wonder if the gender stereotype evolves with time. We will still use qualitative and quantitative analysis. We group the movies by the release date and cut them by decades.
+
+<img alt="图 7" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/c52046d4d4bbdd36b68190214976b37e890c88b9b1fd1b25c05f9d0312903166.png" width="90%" />
+
+We only show the verbs here. The results of adjectives are similar. We can find that the trends are similar and coherent with the overall analysis. However, we notice a decrease in absolute value by looking at the scale of the x-axis. This may tell us that the bias exists, but it is decreasing with time. Our quantitative analysis further argues this point. We do a regression analysis between KL divergence and decades.
+
+<img alt="图 8" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/6fc54e3e8b1cf1a307c07494a3a7c8c2d91c939d3bc88734d65a60e4477945d5.png" width="70%" />
+
+We could see that the KL divergence is decreasing, so gender stereotype exists but decreases with time. We also compare the gender stereotypes between genres, but that's not part of our main story and you can see the notebook for details.
 
 > ### How does the gender composition among the actors change over time?
 
