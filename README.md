@@ -16,6 +16,7 @@ As feminist consciousness grows, gender differences have received much more atte
 ## Proposed Additional Datasets
 
 - [GDP per capita from The World Bank](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD): a dataset containing country names and GDP per capita for analyzing the relationship between the affluence of society and the occurrence of women in the film industry.
+- [Processed summaries with Stanford CoreNLP pipeline](http://www.cs.cmu.edu/~ark/personas/data/corenlp_plot_summaries.tar): The CMU Movie Summary Corpus dataset that have been run through the Stanford CoreNLP pipeline. These summaries are stored in XML format. This dataset can be used to extract character descriptors as defined in the paper [Learning Latent Personas of Film Characters](http://www.cs.cmu.edu/~dbamman/pubs/pdf/bamman+oconnor+smith.acl13.pdf) by David Bamman, Brendan O'Connor, and Noah A. Smith. We use the word POS for our analysis.
 
 ## Methods
 
