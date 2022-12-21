@@ -91,9 +91,9 @@ We also plot the average age evolution of female and male actors. It is interest
 
 The peak of character ages are in about 20s to 30s for both female and male, while also slight difference exists. The peak of male characters comes a bit later than female characters.
 
-<img alt="image 8" src="./images/female_age_distribution.png" width = "70%" />
+<img alt="image 8" src="./images/actor_age_distribution.png" width = "70%" />
 
-<img alt="image 9" src="./images/male_age_distribution.png" width = "70%" />
+<img alt="image 9" src="./images/actor_age_distribution_hist.png" width = "70%" />
 
 Besides the peak shift, we see the hist of female age distribution "thinner" than that of male age distribution, which probably means shorter career span. To be more precise, we sort the data with actors with their charaters. The career span in year is then computed from the difference of latest and ealiest character. 
 
