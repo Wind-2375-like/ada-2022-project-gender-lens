@@ -37,7 +37,7 @@ Then we wonder if the gender stereotype evolves with time. We will still use qua
 
 We only show the verbs here. The results of adjectives are similar. We can find that the trends are similar and coherent with the overall analysis. However, we notice a decrease in absolute value by looking at the scale of the x-axis. This may tell us that the bias exists, but it is decreasing with time. Our quantitative analysis further argues this point. We do a regression analysis between KL divergence and decades.
 
-<img alt="图 8" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/6fc54e3e8b1cf1a307c07494a3a7c8c2d91c939d3bc88734d65a60e4477945d5.png" width="70%" />
+<img alt="图 8" src="https://cdn.jsdelivr.net/gh/Wind2375like/I-m_Ghost@main/img/6fc54e3e8b1cf1a307c07494a3a7c8c2d91c939d3bc88734d65a60e4477945d5.png" width="50%" />
 
 We could see that the KL divergence is decreasing, so gender stereotype exists but decreases with time. We also compare the gender stereotypes between genres, but that's not part of our main story and you can see the notebook for details.
 
