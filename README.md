@@ -1,4 +1,4 @@
-# Gender Analysis on CMU Movie Dataset
+# Gender Lens - A Cinematic Analysis
 
 _**A**ll**d**atapoint**a**ccurate: Yiyang Feng, Naisong Zhou, Haotian Wu, Haolong Li_
 
